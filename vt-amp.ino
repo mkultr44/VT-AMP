@@ -8,7 +8,6 @@
 #define LEN 28
 #define DET 29
 
-volatile bool SW = false;
 volatile bool beacon = false;
 long lastbeacon = 0;
 bool latch = false;
@@ -17,8 +16,8 @@ uint32_t beacons = 0;
 
 void rxtxctrl() {
   beacon = digitalReadFast(DET);
-  SW = !beacon;
-  digitalWriteFast(CTRL, SW);
+  digitalWriteFast(CTRL, beacon);
+  digitalWriteFast(CTRL2, beacon);
 }
 
 void setup() {
@@ -28,6 +27,7 @@ void setup() {
   pinMode(DET, INPUT);
   pinMode(LEN, OUTPUT);
   pinMode(CTRL, OUTPUT);
+  pinMode(CTRL2, OUTPUT);
   pinMode(LED_POWER, OUTPUT);
   pinMode(LED_TX, OUTPUT);
   pinMode(LED_RX, OUTPUT);
@@ -59,7 +59,7 @@ digitalWriteFast(LED_RX, !beacon);
 
 void loop() {
   if (beacon) {
-    if (millis() - lastbeacon > 10000) {
+    if (millis() - lastbeacon > 5000) {
       beacons = beacons + 1;
       beacon = false;
       lastbeacon = millis();
