@@ -58,7 +58,7 @@ digitalWriteFast(LED_RX, !beacon);
 }
 
 void loop() {
-  if (beacon == true) {
+  if (beacon) {
     if (millis() - lastbeacon > 10000) {
       beacons = beacons + 1;
       beacon = false;
