@@ -1,0 +1,15 @@
+UNITS=INCH
+#Feature symbol names
+
+#Feature attribute names
+
+#Layer features
+S P 0
+OB -0.8426535 -0.8486561 I
+OS 0.8502599 -0.8486561
+OS 0.8502599 0.8442573
+OS -0.8426535 0.8442573
+OS -0.8426535 -0.8486561
+OE
+SE
+
