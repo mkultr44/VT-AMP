@@ -1,6 +1,0 @@
-UNITS = MM
-.eda_layers = inner_layer2
-.layer_dielectric = 0
-.copper_weight = 0.015189230378460757
-.dielectric_constant = 0
-.loss_tangent = 0
