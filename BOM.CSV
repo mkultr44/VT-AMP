@@ -22,7 +22,7 @@ C30;22 μF;CL21A226MOYNNWE;Samsung;805;min. 4.7  μF @ 6V DC BIAS;;;
 C31;10 nF;GCM188R72A103KA37D;Murata;603;no;;;
 C32;10 nF;GCM188R72A103KA37D;Murata;603;no;;;
 CRYSTAL;;ABM8-272-T3;Abacron;;no;;;
-D1;;824501600;Würth Elektronik;;ok;;;
+D1;;824501600;Würth Elektronik;;ok;;
 D2;;NSR20F30NXT5G;onsemi;603;Fw. current min. 500mA, VDrop max. 500mV;;;
 D3;;NSR20F30NXT5G;onsemi;603;Fw. current min. 500mA, VDrop max. 500mV;;;
 D4;;NSR20F30NXT5G;onsemi;603;Fw. current min. 1A, VDrop max. 500mV;;;
