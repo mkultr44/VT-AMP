@@ -14,7 +14,6 @@ Power via coax BIAS-T 6V/DC
 
 PCB stack up for 50 Ohm impedance:
 
-
 L1 1 oz COPPER
 Prepreg 7628, RC 49%, 0.2028mm
 L2 0.5 oz COPPER
