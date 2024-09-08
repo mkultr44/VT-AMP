@@ -725,7 +725,7 @@ class=SpellE>Gain</span> 18 dB</p>
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNoSpacing><span class=SpellE>Adjustable</span> TX <span
-class=SpellE>treshold</span> via TRIM <span class=SpellE>from</span> -26 - 12 <span
+class=SpellE>treshold</span> via TRIM <span class=SpellE>from</span> -26 dBm - +12 <span
 class=SpellE>dBm</span></p>
 
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
