@@ -14,3 +14,6 @@ PA Gain 20 dB
 DET Amp Gain 20 dB
 
 Adjustable TX treshold via TRIM from - 24 dBm
+
+Conductive anodized aluminum CNC enclosure
+![correction step](https://github.com/user-attachments/assets/30dde9b7-5a7b-4e43-9871-e7cc6e250c4a)
