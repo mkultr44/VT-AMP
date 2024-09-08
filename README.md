@@ -7,8 +7,7 @@ VT AMP - MCU controlled RX/TX Detector + RX ultra low noise amplifier & TX power
 Skyworks SKY67151-396LF
 LNA Gain 26 dB @ 849 Mhz NF .25 dB
 
-SKYA21026 DPDT Switches, IL < 0.5 dB
-unused transmission lines terminated to 50R resistors.
+SKYA21026 DPDT Switches, IL < 0.5 dB - inactive transmission lines terminated to 50R resistors.
 
 PA Gain 20 dB
 DET Amp Gain 20 dB
