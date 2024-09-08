@@ -9,8 +9,9 @@ LNA Gain 26 dB @ 849 Mhz NF .25 dB
 
 SKYA21026 DPDT Switches, IL < 0.5 dB - inactive transmission lines terminated to 50R resistors.
 
-PA Gain 20 dB
-DET Amp Gain 20 dB
+TX Gain 20 dB
+
+Detection Amp Gain 20 dB
 
 Adjustable TX treshold via TRIM from - 24 dBm
 
