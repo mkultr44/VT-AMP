@@ -16,25 +16,15 @@ PCB stack up for 50 Ohm impedance:
 
 
 L1 1 oz COPPER
-
 Prepreg 7628, RC 49%, 0.2028mm
-
 L2 0.5 oz COPPER
-
 Core 0.4mm H/HOZ without copper
-
 L3 0.5 oz COPPER
-
 Prepreg 7628, RC 49%, 0.2028 mm
-
 L4 0.5 oz COPPER
-
 Core 0.4mm H/HOZ without copper
-
 L5 0.5 oz COPPER
-
 Prepreg 7628, RC 49%, 0.2028mm
-
 L6 1 oz COPPER
 
 Conductive anodized aluminum CNC outdoor enclosure for antenna mast mounting
