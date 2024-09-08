@@ -23,9 +23,9 @@ C31,Murata,GCM188R72A103KA37D,MLCC,10 nF,603,no
 C32,Murata,GCM188R72A103KA37D,MLCC,10 nF,603,no
 CRYSTAL,Abacron,ABM8-272-T3,Crystal,12 MHz,3.2 x 2.5 mm,no
 D1,Diotec Semiconductor,P4SMAJ12CA,TVS Diode,13.3V Clamp,DO-214AC-2,ok
-D2,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A, VF max. 0.5 V
-D3,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A, VF max. 0.5 V
-D4,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A, VF max. 0.5 V
+D2,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A VF max. 0.5 V
+D3,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A VF max. 0.5 V
+D4,onsemi,NSR20F30NXT5G,Schottky Diode,2 A,603,IF min. 0.5A VF max. 0.5 V
 DC,Mini-Circuits,D20C+,RF Directional Coupler,-18 dB,SOT-23-6,no
 DET,Analog Devices,LTC5536ES6#TRMPBF,RF Envelope Detector,-28 - 12 dBm,TSOT-23-6,no
 FLASH,Winbond,W25Q128JVSIM,NOR Flash Memory,16 MB,SOIC-8,no
