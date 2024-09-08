@@ -737,31 +737,8 @@ class=SpellE>dBm</span></p>
 <p class=MsoNoSpacing>PCB <span class=SpellE>stack</span> <span class=SpellE>up</span>
 <span class=SpellE>for</span> 50 Ohm <span class=SpellE>impedance</span>:<o:p></o:p></p>
 
-<p class=MsoNoSpacing>L1: 1 <span class=SpellE>oz</span> COPPER<o:p></o:p></p>
+![image](https://github.com/user-attachments/assets/46814df8-c6f2-4942-9300-1041acae0702)
 
-<p class=MsoNoSpacing><span class=SpellE>Prepreg</span> 7628, RC 49%, 0.2028mm<o:p></o:p></p>
-
-<p class=MsoNoSpacing>L2: 0.5 <span class=SpellE>oz</span> COPPER<o:p></o:p></p>
-
-<p class=MsoNoSpacing>Core 0.4mm H/HOZ <span class=SpellE>without</span> <span
-class=SpellE>copper</span><o:p></o:p></p>
-
-<p class=MsoNoSpacing>L3: 0.5 <span class=SpellE>oz</span> COPPER<o:p></o:p></p>
-
-<p class=MsoNoSpacing><span class=SpellE>Prepreg</span> 7628, RC 49%, 0.2028 mm<o:p></o:p></p>
-
-<p class=MsoNoSpacing>L4: 0.5 <span class=SpellE>oz</span> COPPER<o:p></o:p></p>
-
-<p class=MsoNoSpacing>Core 0.4mm H/HOZ <span class=SpellE>without</span> <span
-class=SpellE>copper</span><o:p></o:p></p>
-
-<p class=MsoNoSpacing>L5: 0.5 <span class=SpellE>oz</span> COPPER<o:p></o:p></p>
-
-<p class=MsoNoSpacing><span class=SpellE>Prepreg</span> 7628, RC 49%, 0.2028mm<o:p></o:p></p>
-
-<p class=MsoNoSpacing>L6: 1 <span class=SpellE>oz</span> COPPER</p>
-
-<p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNoSpacing><span class=SpellE>Conductive</span> <span class=SpellE>anodized</span>
 <span class=SpellE>aluminum</span> CNC <span class=SpellE>outdoor</span> <span
