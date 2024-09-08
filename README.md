@@ -15,6 +15,8 @@ DET Amp Gain 20 dB
 
 Adjustable TX treshold via TRIM from - 24 dBm
 
+Power via coax BIAS-T 6V/DC
+
 Conductive anodized aluminum CNC outdoor enclosure for antenna mast mounting
 
 ![correction step (1)](https://github.com/user-attachments/assets/a1ed6b1d-f974-427b-960b-77eeacaf4285)
