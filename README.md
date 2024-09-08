@@ -17,4 +17,4 @@ Adjustable TX treshold via TRIM from - 24 dBm
 
 Conductive anodized aluminum CNC outdoor enclosure for antenna mast mounting
 
-![correction step](https://github.com/user-attachments/assets/30dde9b7-5a7b-4e43-9871-e7cc6e250c4a)
+![correction step (1)](https://github.com/user-attachments/assets/a1ed6b1d-f974-427b-960b-77eeacaf4285)
