@@ -694,7 +694,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
 <div class=WordSection1>
 
-<p class=MsoNoSpacing><b>VT AMP - MCU <span class=SpellE>controlled</span>
+<p class=MsoNoSpacing><b>VT AMP - 868 MHz MCU <span class=SpellE>controlled</span>
 RX/TX <span class=SpellE>Detector</span> + RX <span class=SpellE>ultra</span> <span
 class=SpellE>low</span> <span class=SpellE>noise</span> <span class=SpellE>amplifier</span>
 &amp; TX power <span class=SpellE>amplifier</span><o:p></o:p></b></p>
