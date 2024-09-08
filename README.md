@@ -715,17 +715,17 @@ class=SpellE>to</span> 50 Ohm <span class=SpellE>resistors</span>.</p>
 
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNoSpacing>TX <span class=SpellE>Gain</span> 20 dB</p>
+<p class=MsoNoSpacing>TX <span class=SpellE>Gain</span> 18.5 dB</p>
 
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNoSpacing><span class=SpellE>Detection</span> Amp <span
-class=SpellE>Gain</span> 20 dB</p>
+class=SpellE>Gain</span> 18 dB</p>
 
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNoSpacing><span class=SpellE>Adjustable</span> TX <span
-class=SpellE>treshold</span> via TRIM <span class=SpellE>from</span> - 24 <span
+class=SpellE>treshold</span> via TRIM <span class=SpellE>from</span> -26 - 12 <span
 class=SpellE>dBm</span></p>
 
 <p class=MsoNoSpacing><o:p>&nbsp;</o:p></p>
