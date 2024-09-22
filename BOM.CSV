@@ -14,7 +14,7 @@ Quantity,Designator,Value,Manufacturer Part,Manufacturer
 1,C33,100 nF,GRM188R72A104KA35D,Murata
 2,D1 D2,,PMEG2005EPK 315,Nexperia
 1,D3,,824501600,Wurth Electronik
-1,DC,10.9 dB,DC0710j5010AHF,Anaren
+1,DC,10.9 dB,DC0710J5010AHF,Anaren
 2,L1 L2,12 nH,LQG18HN12NJ00D,Murata
 1,L3,140 nH,LQW15CAR14J00D,Murata
 2,LDO3V3 LDO5V,,TPS7A4700RGWR,Texas Instruments
@@ -40,4 +40,3 @@ Quantity,Designator,Value,Manufacturer Part,Manufacturer
 2,SW1 SW2,,SKYA21026,Skyworks
 1,TRESHOLD,200 ?,3361P-1-201GLF,Bourns
 1,USB,,USB4120-03-C,GCT
-,,,,
