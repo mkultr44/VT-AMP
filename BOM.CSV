@@ -24,7 +24,7 @@ Quantity,Designator,Value,Manufacturer Part,Manufacturer
 1,Q1,,ABM8-272-T3,Abacron
 2,R1 R2,49.9 ?,MCT0603PD4999DP500,Vishay
 2,R10 R12,10 k?,CR0402-FX-1002GLF,Bourns
-2,R13,R30,1 k?,CR0603-FX-1001ELF,Bourns
+2,R13 R30,1 k?,CR0603-FX-1001ELF,Bourns
 1,R27,4.7 k?,CR0603-FX-4701ELF,Bourns
 1,R3,49.9 ?,ERA-2AED49R9X,Panasonic
 2,R32 R33,27.4 ?,CR0603-FX-27R4ELF,Bourns
