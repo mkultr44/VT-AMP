@@ -3,7 +3,9 @@
 ![3D_TQP_2024-09-22B](https://github.com/user-attachments/assets/208d65ba-3f0d-441d-955a-a3a855c1cf23)
 ## **VT-AMP 868MHz RX & TX sensing Low Noise Amplifier**
 
-#Specs:
+Specs:
+
+Supply VIN via BIAS-T 6-9 V
 
 
 ![image](https://github.com/user-attachments/assets/46814df8-c6f2-4942-9300-1041acae0702)
