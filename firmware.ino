@@ -100,6 +100,23 @@ void serialout() {
                 tx ? "<TX>" : "<RX>", lastbeaconminutes, beacons, dbm);
 }
 
+void ledboot() {
+  digitalWriteFast(LEDRX, HIGH);
+  digitalWriteFast(LEDTX, HIGH);
+  digitalWriteFast(LEDBC, HIGH);
+  digitalWriteFast(LEDMCU, HIGH);
+  delay(250);
+  for (int i = 0; i < LEDBAR_COUNT; i++) {
+    digitalWriteFast(ledbar[i], HIGH);
+    delay(50);
+    digitalWriteFast(ledbar[i], LOW);
+  }
+  digitalWriteFast(LEDRX, LOW);
+  digitalWriteFast(LEDTX, LOW);
+  digitalWriteFast(LEDBC, LOW);
+}
+
+
 void setup() {
   Serial.begin(115200);
   analogReadResolution(12);
@@ -124,22 +141,6 @@ void setup() {
   ledboot();
   rxtxctrl();
   attachInterrupt(digitalPinToInterrupt(DET), rxtxctrl, CHANGE);
-}
-
-void ledboot() {
-  digitalWriteFast(LEDRX, HIGH);
-  digitalWriteFast(LEDTX, HIGH);
-  digitalWriteFast(LEDBC, HIGH);
-  digitalWriteFast(LEDMCU, HIGH);
-  delay(250);
-  for (int i = 0; i < LEDBAR_COUNT; i++) {
-    digitalWriteFast(ledbar[i], HIGH);
-    delay(50);
-    digitalWriteFast(ledbar[i], LOW);
-  }
-  digitalWriteFast(LEDRX, LOW);
-  digitalWriteFast(LEDTX, LOW);
-  digitalWriteFast(LEDBC, LOW);
 }
 
 void loop() {
