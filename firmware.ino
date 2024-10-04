@@ -22,21 +22,16 @@ constexpr int LEDBAR7 = 19;
 constexpr int LEDBAR8 = 18;
 constexpr int LEDBAR9 = 13;
 constexpr int LEDBAR10 = 14;
-
 constexpr uint8_t LEDBAR_COUNT = 10;
 constexpr uint8_t ledbar[LEDBAR_COUNT] = { LEDBAR1, LEDBAR2, LEDBAR3, LEDBAR4, LEDBAR5, LEDBAR6, LEDBAR7, LEDBAR8, LEDBAR9, LEDBAR10 };
-
 volatile bool tx = false;
 volatile bool rx = true;
 volatile bool beacon = false;
-
 unsigned long lastbeacon = 0;
 unsigned long bartimeout = 0;
 unsigned long beacons = 0;
-
 double dbm_last = 0;
 double dbm = 0;
-
 bool latch = false;
 int voltage = 0;
 
@@ -49,15 +44,12 @@ double convertoRFtreshold(double switchingVoltage) {
     { -28, 0 }, { -24, 20 }, { -20, 80 }, { -16, 180 }, { -12, 360 },
     { -8, 600 }, { -4, 950 }, { 0, 1400 }, { 4, 2000 }, { 8, 2600 }
   };
-
   if (switchingVoltage <= data.front().second) return data.front().first;
   if (switchingVoltage >= data.back().second) return data.back().first;
-
   auto it = std::lower_bound(data.begin(), data.end(), std::make_pair(0.0, switchingVoltage),
                              [](const std::pair<double, double>& a, const std::pair<double, double>& b) {
                                return a.second < b.second;
                              });
-
   return interpolate((it - 1)->first, (it - 1)->second, it->first, it->second, switchingVoltage);
 }
 
@@ -120,7 +112,6 @@ void ledboot() {
 void setup() {
   Serial.begin(115200);
   analogReadResolution(12);
-
   pinMode(VM, INPUT);
   pinMode(DET, INPUT);
   pinMode(LEN, OUTPUT);
@@ -132,7 +123,6 @@ void setup() {
   pinMode(LEDRX, OUTPUT);
   pinMode(LEDBC, OUTPUT);
   pinMode(LEDMCU, OUTPUT);
-
   for (int i = 0; i < LEDBAR_COUNT; i++) {
     pinMode(ledbar[i], OUTPUT);
   }
@@ -149,10 +139,8 @@ void loop() {
     lastbeacon = millis();
     beacon = false;
   }
-
   voltage = analogRead(VM) * 3300 / 4096;
   dbm = convertoRFtreshold(voltage) + 10;
-
   serialout();
   updateLEDBar();
   dbm_last = dbm;
