@@ -140,7 +140,7 @@ void loop() {
     beacon = false;
   }
   voltage = analogRead(VM) * 3300 / 4096;
-  dbm = convertoRFtreshold(voltage) + 10;
+  dbm = convertoRFtreshold(voltage) + 10.5;
   serialout();
   updateLEDBar();
   dbm_last = dbm;
