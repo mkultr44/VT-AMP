@@ -75,6 +75,31 @@ void rxtxctrl() {
   beacon = tx;
 }
 
+void updateLEDBar() {
+  if (dbm > dbm_last + 0.5 || dbm < dbm_last - 0.5) {
+    bartimeout = millis() + 5000;
+  }
+  if (millis() < bartimeout) {
+    int step = map(dbm, -14, 22, 0, LEDBAR_COUNT - 1);
+    for (int i = 0; i < LEDBAR_COUNT; i++) {
+      digitalWriteFast(ledbar[i], i <= step ? HIGH : LOW);
+    }
+  } else {
+    for (int i = 0; i < LEDBAR_COUNT; ++i) {
+      digitalWriteFast(ledbar[i], LOW);
+    }
+  }
+  digitalWriteFast(LEDTX, tx);
+  digitalWriteFast(LEDRX, rx);
+  digitalWriteFast(LEDBC, beacons >= 5 ? HIGH : LOW);
+}
+
+void serialout() {
+  int lastbeaconminutes = (millis() - lastbeacon) / 60000;
+  Serial.printf("%s Last Beacon: %4i m Beacons: %5lu TX-Threshold: %3.1f dBm\n", 
+                tx ? "<TX>" : "<RX>", lastbeaconminutes, beacons, dbm);
+}
+
 void setup() {
   Serial.begin(115200);
   analogReadResolution(12);
@@ -115,31 +140,6 @@ void ledboot() {
   digitalWriteFast(LEDRX, LOW);
   digitalWriteFast(LEDTX, LOW);
   digitalWriteFast(LEDBC, LOW);
-}
-
-void updateLEDBar() {
-  if (dbm > dbm_last + 0.5 || dbm < dbm_last - 0.5) {
-    bartimeout = millis() + 5000;
-  }
-  if (millis() < bartimeout) {
-    int step = map(dbm, -14, 22, 0, LEDBAR_COUNT - 1);
-    for (int i = 0; i < LEDBAR_COUNT; i++) {
-      digitalWriteFast(ledbar[i], i <= step ? HIGH : LOW);
-    }
-  } else {
-    for (int i = 0; i < LEDBAR_COUNT; ++i) {
-      digitalWriteFast(ledbar[i], LOW);
-    }
-  }
-  digitalWriteFast(LEDTX, tx);
-  digitalWriteFast(LEDRX, rx);
-  digitalWriteFast(LEDBC, beacons >= 5 ? HIGH : LOW);
-}
-
-void serialout() {
-  int lastbeaconminutes = (millis() - lastbeacon) / 60000;
-  Serial.printf("%s Last Beacon: %4i m Beacons: %5lu TX-Threshold: %3.1f dBm\n", 
-                tx ? "<TX>" : "<RX>", lastbeaconminutes, beacons, dbm);
 }
 
 void loop() {
