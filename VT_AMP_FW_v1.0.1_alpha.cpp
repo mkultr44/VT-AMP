@@ -52,12 +52,10 @@ double convertoRFtreshold(double switchingVoltage) {
   };
   if (switchingVoltage <= data.front().second) return data.front().first;
   if (switchingVoltage >= data.back().second) return data.back().first;
-
   auto it = std::lower_bound(data.begin(), data.end(), std::make_pair(0.0, switchingVoltage),
                              [](const std::pair<double, double>& a, const std::pair<double, double>& b) {
                                return a.second < b.second;
                              });
-
   return interpolate((it - 1)->first, (it - 1)->second, it->first, it->second, switchingVoltage);
 }
 
