@@ -26,7 +26,6 @@ constexpr int LEDBAR8 = 18;
 constexpr int LEDBAR9 = 13;
 constexpr int LEDBAR10 = 14;
 constexpr int BLINKTIMER = 100;
-constexpr float COUPLING = 8;
 constexpr uint8_t LEDBAR_COUNT = 10;
 constexpr uint8_t ledbar[LEDBAR_COUNT] = { LEDBAR1, LEDBAR2, LEDBAR3, LEDBAR4, LEDBAR5, LEDBAR6, LEDBAR7, LEDBAR8, LEDBAR9, LEDBAR10 };
 volatile bool tx = false;
@@ -48,26 +47,56 @@ double interpolate(double x0, double y0, double x1, double y1, double y) {
 
 double convertoRFtreshold(double switchingVoltage) {
   const std::vector<std::pair<double, double>> data = {
-    { -28, 0 }, { -24, 20 }, { -20, 80 }, { -16, 180 }, { -12, 360 }, { -8, 600 }, { -4, 950 }, { 0, 1400 }, { 4, 2000 }, { 8, 2600 }
+    { -15.8, 114.4 },
+    { -14.4, 116.1 },
+    { -13.1, 120.5 },
+    { -11.7, 123.3 },
+    { -10.3, 125.2 },
+    { -9.0, 132.6 },
+    { -7.6, 139.3 },
+    { -6.3, 145.3 },
+    { -4.9, 159.5 },
+    { -3.6, 168.8 },
+    { -2.2, 189.3 },
+    { -0.8, 207.9 },
+    { 0.5, 239.4 },
+    { 1.9, 271.1 },
+    { 3.3, 311.7 },
+    { 4.5, 345.1 },
+    { 6.0, 393.8 },
+    { 8.6, 525.1 },
+    { 9.9, 598.4 },
+    { 13.8, 931.2 },
+    { 14.7, 1007.3 },
+    { 15.6, 1150.5 },
+    { 16.7, 1264.2 },
+    { 17.6, 1404.3 },
+    { 18.5, 1511.3 },
+    { 19.2, 1658.2 },
+    { 19.6, 1776.4 },
+    { 20.3, 1929.3 },
+    { 21.0, 2058.4 },
+    { 21.1, 2380.6 },
+    { 21.4, 2185.9 },
+    { 21.7, 2281.6 },
+    { 21.9, 2570.8 }
   };
   if (switchingVoltage <= data.front().second) return data.front().first;
   if (switchingVoltage >= data.back().second) return data.back().first;
+
   auto it = std::lower_bound(data.begin(), data.end(), std::make_pair(0.0, switchingVoltage),
                              [](const std::pair<double, double>& a, const std::pair<double, double>& b) {
                                return a.second < b.second;
                              });
-  return interpolate((it - 1)->first, (it - 1)->second, it->first, it->second, switchingVoltage);
-}
 
-void ampctrl(bool txState) {
-  digitalWriteFast(RXAMP, txState);
-  digitalWriteFast(TXAMP, !txState);
+  return interpolate((it - 1)->first, (it - 1)->second, it->first, it->second, switchingVoltage);
 }
 
 void rxtxctrl() {
   tx = digitalReadFast(DET);
   rx = !tx;
-  ampctrl(tx);
+  digitalWriteFast(RXAMP, tx);
+  digitalWriteFast(TXAMP, !tx);
   digitalWriteFast(CTRL1, tx);
   digitalWriteFast(CTRL2, tx);
   beacon = tx;
@@ -86,10 +115,10 @@ void blinkBC() {
 void updateLED() {
   if (beacons > 0 && beacons < 5) blinkBC();
   if (beacons >= 5) digitalWriteFast(LEDBC, HIGH);
-    int step = map(dbm, -16, 14, 0, LEDBAR_COUNT - 1);
-    if (step != laststep){
+  int step = map(dbm, -16, 22, 0, LEDBAR_COUNT - 1);
+  if (step != laststep) {
     for (int i = 0; i < LEDBAR_COUNT; i++) {
-      if(step >= i) digitalWriteFast(ledbar[i], HIGH);
+      if (step >= i) digitalWriteFast(ledbar[i], HIGH);
       else digitalWriteFast(ledbar[i], LOW);
     }
     bartimeout = millis() + 5000;
@@ -146,6 +175,10 @@ void setup() {
   digitalWriteFast(LEN, latch);
   ledboot();
   rxtxctrl();
+  voltage = analogRead(VM) * VCC / pow(2, BITDEPTH);
+  dbm = convertoRFtreshold(voltage);
+  int step = map(dbm, -16, 22, 0, LEDBAR_COUNT - 1);
+  laststep = step;
   attachInterrupt(digitalPinToInterrupt(DET), rxtxctrl, CHANGE);
 }
 
@@ -156,7 +189,7 @@ void loop() {
     beacon = false;
   }
   voltage = analogRead(VM) * VCC / pow(2, BITDEPTH);
-  dbm = convertoRFtreshold(voltage) + COUPLING;
+  dbm = convertoRFtreshold(voltage);
   serialout();
   updateLED();
 }
