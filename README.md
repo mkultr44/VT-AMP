@@ -1,6 +1,6 @@
 # **860 MHz - 960 MHz RX / TX Amplifier**
 
-## Specs
+### Specs
 
 RX / TX Gain 19.8 dB
 
@@ -10,7 +10,7 @@ TX sense adjustable from -16 dBm to +22 dBm
 
 Supply VIN via BIAS-T 6-9 V
 
-## Indicators
+### Indicators
 
 Indicator | Function
 --------- | --------
@@ -22,11 +22,11 @@ TX | Amplifier in transmit mode
 MCU | Microcontroller is operational
 BC | Starts blinking if transmit mode got activated at least once, on continous if transmit mode got activated at least 5 times
 
-## Threshold
+### Threshold
 
 Adjust TX threshold via trimmer, LED bar shows approximate dBm value, more precise output is possible via USB connection serial port
 
-## PCB Stack Up
+### PCB Stack Up
 
 Layer | Material | Thickness (mil) | Thickness (mm)
 ----- | -------- | --------------- | --------------
@@ -42,7 +42,7 @@ L5 | Inner Copper Weight 0.5 oz | 0.6 | 0.0152
 Prepreg | 7628, RC 49%, 8.6 mil | 8.28 | 0.2104
 L6 | Outer Copper Weight 1 oz | 1.38 | 0.0350
 
-## Flashing Firmware
+### Flashing Firmware
 
 Connect via USB-C to PC while pressing boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
 
