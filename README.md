@@ -11,7 +11,8 @@ TX sense adjustable from -16 dBm to +22 dBm
 Supply VIN via BIAS-T 6-9 V
 
 
-**PCB Stack Up**
+
+#PCB Stack Up
 
 Layer | Material | Thickness (mil) | Thickness (mm)
 ----- | -------- | --------------- | --------------
