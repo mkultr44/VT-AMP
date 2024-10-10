@@ -46,18 +46,13 @@ L6 | Outer Copper Weight 1 oz | 1.38 | 0.0350
 
 Connect via USB-C to PC while pressing boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
 
-## Pictures and Renders
+## Pictures and Renders![PCB_TQP_2024-10-10_6_copy_1](https://github.com/user-attachments/assets/39d01d84-bfbf-4a23-a5e1-28fcb0367202)
+![PCB_TQP_2024-10-10_5_copy_1](https://github.com/user-attachments/assets/9dc31635-673a-4656-9d39-0659bbc64ab9)
+![PCB_TQP_2024-10-10_2_copy_1](https://github.com/user-attachments/assets/25390f84-08b8-4652-b6d0-231fb694bebd)
+![PCB_TQP_2024-10-10_1_copy_1](https://github.com/user-attachments/assets/54d14534-4eaf-4cc2-b745-ee7bf21df8c9)
+![PCB_TQP_2024-10-10_4_copy_1](https://github.com/user-attachments/assets/8fda3c23-e35e-401d-aeba-f1fcf9c70d47)
+![PCB_TQP_2024-10-10_3_copy_1](https://github.com/user-attachments/assets/f24c26b3-2335-407d-955e-02a43c4e5230)
 
-![PCB_TQP_2024-10-10_1](https://github.com/user-attachments/assets/c339026f-137f-4f76-b3a7-dd731eb48abd)
-![PCB_TQP_2024-10-10_1](https://github.com/user-attachments/assets/2eb37f10-12c8-40d0-aa93-4dd3a8db7e9a)
-
-![PCB_TQP_2024-10-10_2](https://github.com/user-attachments/assets/2bde4ddd-27e3-476c-9faf-c19b9ea2110a)
-![PCB_TQP_2024-10-10_3](https://github.com/user-attachments/assets/bb755897-9bde-4b0e-9cd5-cb3eef907eb5)
-
-![PCB_TQP_2024-10-10_4](https://github.com/user-attachments/assets/abdddf95-8d66-4785-8ba8-203b6b7afbed)
-![PCB_TQP_2024-10-10_5](https://github.com/user-attachments/assets/aa46f630-b872-49d5-a332-80911795692e)
-
-![PCB_TQP_2024-10-10_6](https://github.com/user-attachments/assets/4751a517-5133-4078-891a-e124be13de59)
 
 ![IMG_6986](https://github.com/user-attachments/assets/494973b2-5131-44f8-90a0-f34d8f4bf3d3)
 ![IMG_6978](https://github.com/user-attachments/assets/cdfc0fae-265b-4c84-83c9-b4451f8b29fc)
