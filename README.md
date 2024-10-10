@@ -1,4 +1,4 @@
-## **860 MHz - 960 MHz Amplifier**
+## **860 MHz - 960 MHz RX / TX Amplifier**
 
 Specs:
 
