@@ -30,7 +30,7 @@ L6 | Outer Copper Weight 1 oz | 1.38 | 0.0350
 
 ## Flashing Firmware
 
-Connect via USB-C to PC while pressing the boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
+Connect via USB-C to PC while pressing boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
 
 ## Pictures and Renders
 
