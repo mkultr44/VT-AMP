@@ -20,7 +20,7 @@ VIN | Coax input voltage is present
 RX | Amplifier in receive mode
 TX | Amplifier in transmit mode
 MCU | Microcontroller is operational
-BC | Starts blinking if transmit mode got activated at least once, on continous on if transmit mode got activated at least 5 times
+BC | Starts blinking if transmit mode got activated at least once, on continous if transmit mode got activated at least 5 times
 
 ## Threshold
 
