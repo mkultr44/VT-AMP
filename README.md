@@ -28,6 +28,10 @@ L5 | Inner Copper Weight 0.5 oz | 0.6 | 0.0152
 Prepreg | 7628, RC 49%, 8.6 mil | 8.28 | 0.2104
 L6 | Outer Copper Weight 1 oz | 1.38 | 0.0350
 
+## Flashing Firmware
+
+Connect via USB-C to PC while pressing the boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
+
 ## Pictures and Renders
 
 ![IMG_6986](https://github.com/user-attachments/assets/494973b2-5131-44f8-90a0-f34d8f4bf3d3)
