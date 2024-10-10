@@ -1,6 +1,6 @@
-## **860 MHz - 960 MHz RX / TX Amplifier**
+# **860 MHz - 960 MHz RX / TX Amplifier**
 
-Specs:
+## Specs
 
 RX / TX Gain 19.8 dB
 
@@ -12,7 +12,7 @@ Supply VIN via BIAS-T 6-9 V
 
 
 
-### PCB Stack Up
+## PCB Stack Up
 
 Layer | Material | Thickness (mil) | Thickness (mm)
 ----- | -------- | --------------- | --------------
