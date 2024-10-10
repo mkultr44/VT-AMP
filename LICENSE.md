@@ -1,7 +1,7 @@
 
 All Rights Reserved
 
-Copyright (c) 2024 Valentin Tannenläufer
+Copyright © 2024 Valentin Tannenläufer
 
 Created by mkultr44
 
