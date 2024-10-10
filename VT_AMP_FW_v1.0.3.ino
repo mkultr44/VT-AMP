@@ -45,7 +45,7 @@ double interpolate(double x0, double y0, double x1, double y1, double y) {
   return x0 + (y - y0) * (x1 - x0) / (y1 - y0);
 }
 
-double convertoRFtreshold(double switchingVoltage) {
+double convertoRFthreshold(double switchingVoltage) {
   const std::vector<std::pair<double, double>> data = {
     { -15.8, 114.4 },
     { -14.4, 116.1 },
@@ -176,7 +176,7 @@ void setup() {
   ledboot();
   rxtxctrl();
   voltage = analogRead(VM) * VCC / pow(2, BITDEPTH);
-  dbm = convertoRFtreshold(voltage);
+  dbm = convertoRFthreshold(voltage);
   int step = map(dbm, -16, 22, 0, LEDBAR_COUNT - 1);
   laststep = step;
   attachInterrupt(digitalPinToInterrupt(DET), rxtxctrl, CHANGE);
@@ -189,7 +189,7 @@ void loop() {
     beacon = false;
   }
   voltage = analogRead(VM) * VCC / pow(2, BITDEPTH);
-  dbm = convertoRFtreshold(voltage);
+  dbm = convertoRFthreshold(voltage);
   serialout();
   updateLED();
 }
