@@ -50,11 +50,15 @@ Connect via USB-C to PC while pressing boot button, device shows up as external 
 
 ![PCB_TQP_2024-10-10_1](https://github.com/user-attachments/assets/c339026f-137f-4f76-b3a7-dd731eb48abd)
 ![PCB_TQP_2024-10-10_1](https://github.com/user-attachments/assets/2eb37f10-12c8-40d0-aa93-4dd3a8db7e9a)
+
 ![PCB_TQP_2024-10-10_2](https://github.com/user-attachments/assets/2bde4ddd-27e3-476c-9faf-c19b9ea2110a)
 ![PCB_TQP_2024-10-10_3](https://github.com/user-attachments/assets/bb755897-9bde-4b0e-9cd5-cb3eef907eb5)
+
 ![PCB_TQP_2024-10-10_4](https://github.com/user-attachments/assets/abdddf95-8d66-4785-8ba8-203b6b7afbed)
 ![PCB_TQP_2024-10-10_5](https://github.com/user-attachments/assets/aa46f630-b872-49d5-a332-80911795692e)
+
 ![PCB_TQP_2024-10-10_6](https://github.com/user-attachments/assets/4751a517-5133-4078-891a-e124be13de59)
+
 ![IMG_6986](https://github.com/user-attachments/assets/494973b2-5131-44f8-90a0-f34d8f4bf3d3)
 ![IMG_6978](https://github.com/user-attachments/assets/cdfc0fae-265b-4c84-83c9-b4451f8b29fc)
 ![IMG_69741](https://github.com/user-attachments/assets/bdfffde8-1579-41e2-9c6d-57feef7329da)
