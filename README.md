@@ -12,7 +12,7 @@ Supply VIN via BIAS-T 6-9 V
 
 
 
-# PCB Stack Up
+### PCB Stack Up
 
 Layer | Material | Thickness (mil) | Thickness (mm)
 ----- | -------- | --------------- | --------------
