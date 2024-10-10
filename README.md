@@ -22,7 +22,7 @@ BC   Starts blinking if transmit mode got activated at least once, on continous 
 
 ## Threshold
 
-Adjust TX threshold via trimmer, LED bar shows approximate dBm value, more precise output of the threshold is possible via USB connection serial port
+Adjust TX threshold via trimmer, LED bar shows approximate dBm value, more precise output is possible via USB connection serial port
 
 ## PCB Stack Up
 
