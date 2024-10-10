@@ -10,7 +10,19 @@ TX sense adjustable from -16 dBm to +22 dBm
 
 Supply VIN via BIAS-T 6-9 V
 
+## Indicators
 
+VIN  Coax input voltage is present
+5V   5 V LDO operational
+3V3  3.3 V LDO operational
+RX   Amplifier in receive mode
+TX   Amplifier in transmit mode
+MCU  Microcontroller is operational
+BC   Starts blinking if transmit mode got activated at least once, on continous on if transmit mode got activated at least 5 times
+
+## Treshold
+
+Adjust TX treshold via trimmer, LED bar shows approximate dBm value, more precise output of the treshold is possible via USB connection serial port
 
 ## PCB Stack Up
 
