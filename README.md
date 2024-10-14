@@ -1,5 +1,5 @@
 # **860 MHz - 960 MHz RX / TX Amplifier**
-
+<iframe width="510" height="520" src="https://b2b.partcommunity.com/community/partcloud/embedded.html?route=embedded&name=Outer+Shell&model_id=167551&portal=partcloud&showDescription=false&showLicense=false&showDownloadButton=false&showHotspots=false&noAutoload=true&autoRotate=true&hideMenu=true&topColor=%2330302F&bottomColor=%23000049&cameraParams=false&varsettransfer=" frameborder="0" id="EmbeddedView-Iframe-167551" allowfullscreen></iframe>
 ### Specs
 
 RX / TX Gain 19.8 dB
