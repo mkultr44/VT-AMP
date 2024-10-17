@@ -1,4 +1,5 @@
 # **860 MHz - 960 MHz RX / TX Amplifier**
+![IMG_6994](https://github.com/user-attachments/assets/6917ad48-5660-48a0-919f-d66a7bfd7cfd)
 ### Specs
 
 RX / TX Gain 19.8 dB
