@@ -8,7 +8,7 @@ RX / TX Gain 19.8 dB
 
 TX sense adjustable from -16 dBm to +22 dBm
 
-Supply VIN via BIAS-T 6-9 V
+Supply VIN 6V via coax
 
 ### Indicators
 
