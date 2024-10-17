@@ -46,6 +46,7 @@ L6 | Outer Copper Weight 1 oz | 1.38 | 0.0350
 Connect via USB-C to PC while pressing boot button, device shows up as external flash drive, drop .uf2 file to drive. Done.
 
 ## Pictures and Renders
+![IMG_6937](https://github.com/user-attachments/assets/b717ac44-4287-4c00-9c06-08eca7d5c6b0)
 ![IMG_6986](https://github.com/user-attachments/assets/494973b2-5131-44f8-90a0-f34d8f4bf3d3)
 ![IMG_6978](https://github.com/user-attachments/assets/cdfc0fae-265b-4c84-83c9-b4451f8b29fc)
 ![IMG_69741](https://github.com/user-attachments/assets/bdfffde8-1579-41e2-9c6d-57feef7329da)
