@@ -3,7 +3,7 @@
 
 constexpr int VCC = 3300;
 constexpr int BITDEPTH = 12;
-constexpr int BEACONCD = 5000;
+constexpr int TXCD = 5000;
 constexpr int CTRL1 = 3;
 constexpr int CTRL2 = 4;
 constexpr int VM = 27;
@@ -30,16 +30,16 @@ constexpr uint8_t LEDBAR_COUNT = 10;
 constexpr uint8_t ledbar[LEDBAR_COUNT] = { LEDBAR1, LEDBAR2, LEDBAR3, LEDBAR4, LEDBAR5, LEDBAR6, LEDBAR7, LEDBAR8, LEDBAR9, LEDBAR10 };
 volatile bool tx = false;
 volatile bool rx = true;
-volatile bool beacon = false;
-unsigned long lastbeacon = 0;
+volatile bool TX = false;
+unsigned long lastTX = 0;
 unsigned long blink = 0;
 unsigned long bartimeout = 0;
-unsigned long beacons = 0;
+unsigned long TXs = 0;
 int laststep = 0;
 double dbm = 0;
 bool latch = false;
 int voltage = 0;
-uint8_t beaconindicator = 0;
+uint8_t TXindicator = 0;
 
 double interpolate(double x0, double y0, double x1, double y1, double y) {
   return x0 + (y - y0) * (x1 - x0) / (y1 - y0);
@@ -99,7 +99,7 @@ void rxtxctrl() {
   digitalWriteFast(RXAMP, tx);
   digitalWriteFast(TXAMP, !tx);
   rx = !tx;
-  beacon = tx;
+  TX = tx;
 }
 
 void blinkBC() {
@@ -113,8 +113,8 @@ void blinkBC() {
 }
 
 void updateLED() {
-  if (beacons > 0 && beacons < 5) blinkBC();
-  if (beacons >= 5) digitalWriteFast(LEDBC, HIGH);
+  if (TXs > 0 && TXs < 5) blinkBC();
+  if (TXs >= 5) digitalWriteFast(LEDBC, HIGH);
   int step = map(dbm, -16, 22, 0, LEDBAR_COUNT - 1);
   if (step != laststep) {
     for (int i = 0; i < LEDBAR_COUNT; i++) {
@@ -130,13 +130,13 @@ void updateLED() {
   laststep = step;
   digitalWriteFast(LEDTX, tx);
   digitalWriteFast(LEDRX, rx);
-  digitalWriteFast(LEDBC, beacons >= 5 ? HIGH : LOW);
+  digitalWriteFast(LEDBC, TXs >= 5 ? HIGH : LOW);
 }
 
 void serialout() {
-  int lastbeaconminutes = (millis() - lastbeacon) / 60000;
-  Serial.printf("%s Last Beacon: %4i m Beacons: %5lu TX-Threshold: %3.1f dBm\n",
-                tx ? "<TX>" : "<RX>", lastbeaconminutes, beacons, dbm);
+  int lastTXminutes = (millis() - lastTX) / 60000;
+  Serial.printf("%s Last TX: %4i m TXs: %5lu TX-Threshold: %3.1f dBm\n",
+                tx ? "<TX>" : "<RX>", lastTXminutes, TXs, dbm);
 }
 
 void ledboot() {
@@ -183,10 +183,10 @@ void setup() {
 }
 
 void loop() {
-  if (beacon && (millis() - lastbeacon > BEACONCD)) {
-    beacons++;
-    lastbeacon = millis();
-    beacon = false;
+  if (TX && (millis() - lastTX > TXCD)) {
+    TXs++;
+    lastTX = millis();
+    TX = false;
   }
   voltage = analogRead(VM) * VCC / pow(2, BITDEPTH);
   dbm = convertoRFthreshold(voltage);
